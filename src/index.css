@@ -1,0 +1,118 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css?family=Outfit:regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Young+Serif:regular&display=swap");
+
+/* variables */
+:root {
+
+  /* font presets */
+  --text-preset-1-desktop: 400 40px/100% "Young Serif", serif;
+  --text-preset-1-mobile: 400 36px/100% "Young Serif", serif;
+  --text-preset-2: 400 28px/100% "Young Serif", serif;
+  --text-preset-3: 600 20px/100% "Outfit", sans-serif;
+  --text-preset-4: 400 16px/150% "Outfit", sans-serif;
+  --text-preset-4-bold: 700 16px/150% "Outfit", sans-serif;
+  
+  /* Rose */
+  --rose-800: #7A284E;
+  --rose-50: #FFF7FB;
+
+  /* Stone */
+  --stone-900: #312E2C;
+  --stone-600: #5F564D;
+  --stone-150: #E3DDD7;
+  --stone-100: #F3E5D7;
+
+  /* Brown */
+  --brown-800: #854632;
+
+  /* White */
+  --white: #FFF;
+
+  /* Spacing scale */
+  --space-100: 4px;
+  --space-200: 8px;
+  --space-300: 12px;
+  --space-400: 16px;
+  --space-500: 24px;
+  --space-550: 28px;
+  --space-600: 32px;
+  --space-700: 40px;
+  --space-800: 48px;
+  --space-900: 64px;
+  --space-1000: 76px;
+  --space-1100: 128px;
+
+  /* Max width for centered layout */
+  --content-width: 736px;
+}
+
+/* reset */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+/* General */
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--stone-100);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper{
+  background-color: var(--white);
+  padding: 0 var(--space-600);
+}
+
+h2{
+  font: var(--text-preset-2);
+  color: var(--brown-800);
+  margin-bottom: var(--space-500);
+}
+
+li, span,
+p{
+  font: var(--text-preset-4);
+  color: var(--stone-600);
+}
+
+strong {
+  font: var(--text-preset-4-bold);
+}
+
+.prep-time__list li::before,
+.ingredients__list li::before {
+  content: '';
+  display: inline-block;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--stone-150);
+  margin: var(--space-600) 0;
+}
+

@@ -1,0 +1,32 @@
+.prep-time {
+  margin-bottom: var(--space-600);
+}
+
+.prep-time__container {
+  padding: var(--space-500);
+}
+
+.prep-time__title {
+  color: var(--rose-800);
+  font: var(--text-preset-3);
+  margin-bottom: var(--space-400);
+}
+
+.prep-time__item {
+  color: var(--stone-600);
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--space-300);
+  padding-left: var(--space-200);
+
+}
+
+.prep-time__list li::before {
+  background-color: var(--rose-800);
+}
+
+.prep-time__label {
+  display: inline-block;
+  margin-left: var(--space-550);
+
+}

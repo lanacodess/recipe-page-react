@@ -1,0 +1,22 @@
+
+.nutrition__description {
+  margin-bottom: var(--space-500);
+ }
+
+.nutrition__item {
+  display: flex;
+  padding: 0 var(--space-600);
+ }
+
+.nutrition__label {
+  width: 50%;
+ }
+
+.nutrition__value { 
+  font: var(--text-preset-4-bold);
+  color: var(--brown-800);
+}
+
+.nutrition-divider { 
+  margin: var(--space-300) 0;
+}

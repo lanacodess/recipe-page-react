@@ -1,0 +1,24 @@
+
+.instructions__list {
+  counter-reset: step;
+  list-style: none;
+  padding-left: 0;
+}
+
+.instructions__item {
+  counter-increment: step;
+  position: relative;
+  padding-left: var(--space-700);
+  margin-bottom: var(--space-400);
+}
+
+.instructions__item::before {
+  content: counter(step) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font: var(--text-preset-4-bold);
+  color: var(--brown-800);
+  margin-right: var(--space-400);
+  margin-left: var(--space-200);
+}

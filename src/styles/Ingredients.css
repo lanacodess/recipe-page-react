@@ -1,0 +1,11 @@
+
+.ingredients__list li::before{
+  background-color: var(--brown-800);
+}
+
+.ingredients__item {
+  padding-left: var(--space-200);
+  display: flex;
+  align-items: center;
+  gap: var(--space-550);
+}
